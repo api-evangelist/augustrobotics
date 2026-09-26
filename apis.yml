@@ -1,23 +1,83 @@
 aid: augustrobotics
+
 name: Augustrobotics
-description: 'Augustrobotics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/68f9b17280b6a3c1d5029c80/6901e2decdaa1113ff158443_Open%20Graph%20Image%201200x630.png
+
+description: 'August Robotics provides autonomous robotic fleets for construction, exhibition, and industrial applications. Their AI‑driven platform automates dirty, dangerous and dull jobs, improving productivity and safety across sectors. The company offers modular robot solutions, leasing options, and a comprehensive service ecosystem to accelerate project delivery.'
+
 url: https://raw.githubusercontent.com/api-evangelist/augustrobotics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Robotics
+- Construction
+- Exhibition
+- Automation
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://augustrobotics.com/vdp
+- type: SecurityTxt
+  url: well-known/augustrobotics-security.txt
+- type: WellKnown
+  url: well-known/augustrobotics-well-known.yml
+- type: Hosts
+  url: hosts/augustrobotics-hosts.yml
+- type: Vendors
+  url: vendors/augustrobotics-vendors.yml
+- type: Newsroom
+  url: https://augustrobotics.com/news
+- type: GitHubOrganization
+  url: https://github.com/augustrobotics
+- type: VulnerabilityDisclosure
+  url: security/augustrobotics-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/augustrobotics-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/augustrobotics
+  url: https://augustrobotics.com
+- type: Documentation
+  url: https://augustrobotics.com/platform
+- type: AboutUs
+  url: https://augustrobotics.com/about-us
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-26'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://portal.augustrobotics.com/mcp
+    status: 403
+  - url: https://equityzen.com/company/augustrobotics
+    status: 403
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

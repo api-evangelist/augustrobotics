@@ -1,0 +1,13 @@
+# August Robotics Limited security contacts and policy
+
+# Our security contact channels
+Contact: mailto:marshal.shi@augustrobotics.com
+
+# Link to our vulnerability disclosure policy
+Policy: https://augustrobotics.com/vdp
+
+# Languages that our team speaks and understands
+Preferred-Languages: en-US
+
+# Expiration date for this security.txt file
+Expires: 2026-11-04T12:05:20z
